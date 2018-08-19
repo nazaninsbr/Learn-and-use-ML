@@ -83,13 +83,13 @@ def main():
 	(train_images, train_labels), (test_images, test_labels) = getTheFashionDataset()
 	class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 	
-	# exploreTheData(train_images, train_labels)
-	# showFirstImage(train_images[0])
+	exploreTheData(train_images, train_labels)
+	showFirstImage(train_images[0])
 
 	train_images = train_images / 255.0
 	test_images = test_images / 255.0
 
-	# showFirstXImages(train_images[:25])
+	showFirstXImages(train_images[:25])
 
 	model = createTheModel()
 	trianTheModel(model, train_images, train_labels)
